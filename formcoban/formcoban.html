@@ -2,75 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form cơ bản</title>
+    <title>Title</title>
+    <style>
+
+        input {
+            border: inset;
+        }
+        table {
+            border: 1px solid black;
+
+        }
+        th {
+            background-color: orangered;
+            color: white
+        }
+        td{
+            color: blue;
+        }
+
+    </style>
 </head>
-<style>
-    h3 {
-        align-content: center;
-        text-align: center;
-
-        background-color: darkorange;
-        background-size: 200px;
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-        font-size: xx-large;
-        color: white;
-
-    }
-    label, body {
-
-        text-align: center;
-        color: darkorange;
-        font-size: large;
-    }
-    p {
-        text-align: center;
-        color: darkorange;
-        font-size: large;
-        margin-right: 100px;
-    }
-</style>
 <body>
-<form action="" method="post">
-<h3>SỞ THÍCH CỦA BẠN </h3>
-<p>Họ và tên:</p>
-<label>
-    <input type="text">
-</label><br>
-<p>Email:</p>
-<label>
-    <input type="text">
-</label><br>
-<p>Sở thích:</p>
-<label>
-    <input type="checkbox" name="Hobbies">Thể thao
-</label>
-<label>
-    <input type="checkbox" name="Hobbies">Âm nhạc
-</label>
-<label>
-    <input type="checkbox" name="Hobbies">Đọc sách
-</label><br>
-<label>
-    <input type="checkbox" name="Hobbies">Lướt web
-</label>
-<label>
-    <input type="checkbox" name="Hobbies">Chơi game
-</label>
-<label>
-    <input type="checkbox" name="Hobbies">Điện ảnh
-</label><br>
-<label>
-    <input type="checkbox" name="Hobbies">Du lịch
-</label><br>
-<label>
-    <input type="submit" name="submit form" value="Gửi thông tin">
-</label><br>
-<label>
-    <input type="reset" name="reset form" value="Nhập lại">
-</label>
-
+<form>
+    <table>
+        <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+        <tr>
+            <td>Họ và tên:</td>
+            <td colspan="2"><label>
+                <input type="text" name="">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td colspan="2"><label>
+                <input type="text" name="">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Sở thích</td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Thể thao</td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Âm nhạc</td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Lướt web</td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Chơi game</td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>
+                <input type="checkbox" name="">
+            </label> Du lịch</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <!--                    <button style=" border: outset" type="submit"> Gui thong tin</button>-->
+                <input style="border: outset" type="submit" value="Gửi thông tin">
+            </td>
+            <td>
+                <!--                    <button style=" border: outset" type="reset">Nhap lai</button>-->
+                <input style="border: outset" type="submit" value="Nhập lại">
+            </td>
+            <td></td>
+        </tr>
+    </table>
 </form>
 </body>
 </html>
