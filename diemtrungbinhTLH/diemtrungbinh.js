@@ -1,0 +1,11 @@
+hoa = prompt("Nhập điểm Hóa:");
+ly = prompt("Nhập điểm Lý:");
+sinh = prompt("Nhập điểm Sinh:");
+let diemHoa = parseInt(hoa);
+let diemLy = parseInt(ly);
+let diemSinh = parseInt(sinh);
+let area = (diemHoa + diemLy + diemSinh) / 3;
+let total = diemHoa + diemLy + diemSinh;
+document.write("Điểm trung bình: " + area + "\n");
+document.write("<br/>");
+document.write("Tổng điểm: " + total);
