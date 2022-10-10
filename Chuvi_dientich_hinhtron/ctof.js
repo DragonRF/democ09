@@ -5,3 +5,4 @@ let dientich = ((chuvi * 2) / 4) * 3.14;
 document.write("Chu vi hình tròn là: " + chuvi);
 document.write("<br/>");
 document.write("Diện tích hình tròn là: " + dientich);
+// Hiển thị chu vi & diện tích hình tròn
