@@ -1,8 +1,12 @@
-let value = prompt('Type a number', 0);
-if (value > 0) {
+let value = +prompt('Type a number', 0);
+switch (value){
+    case 1:
     alert(1);
-} else if (value < 0) {
+    break;
+    case -1:
     alert(-1);
-} else {
+    break;
+    default:
     alert(0);
+
 }
