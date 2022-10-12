@@ -1,6 +1,6 @@
 let diemtongket = prompt("Nhập vào điểm tổng kết: ");
 if (diemtongket > 0)
-    if (diemtongket >= 9) {
+    if (diemtongket >= 9 && diemtongket <=10) {
     alert("Chúc mừng, bạn đã tốt nghiệp loại Xuất sắc.");
 } else if (diemtongket < 9 && diemtongket >= 8) {
         alert("Chúc mừng, bạn đã tốt nghiệp loại Giỏi.");
