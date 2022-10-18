@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+  body {margin-top: 40px;}
+</style>
+<script>
+  function count_words()
+  {
+    let str1 = document.getElementById("InputText").value;
+    //exclude  start and end white-space
+    str1 = str1.replace(/(^\s*)|(\s*$)/gi,"");
+    //convert 2 or more spaces to 1
+    str1 = str1.replace(/ {2,}/gi, " ");
+    // exclude newline with a start spacing
+    str1 = str1.replace(/\n /,"\n");
+    document.getElementById("noofwords").value = str1.split(' ').length;
+  }
+</script>
+<body>
+<label for="InputText"></label><textarea id="InputText" cols="30" rows="4">The quick brown fox jumps over the lazy dog.</textarea>
+<br>
+<input type="button" name="Convert" value="No. of Words" onclick="count_words();">
+<label for="noofwords"></label><input id = "noofwords" type="text" value="" size="6">
+</body>
+</html>
