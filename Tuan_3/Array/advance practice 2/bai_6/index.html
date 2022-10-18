@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 6</title>
+</head>
+<body>
+<label for="txt"></label><input type="text" id="txt">
+<button id="btn" onclick="run()">RUN</button>
+<p id="result"></p>
+<script>
+  function run(){
+    let str = document.getElementById("txt").value;
+    let arr = [];
+    for(let i=0;i<str.length;i++){
+      if(str[i] === '-'){
+        arr[i] = '_';
+      }else arr[i] = str[i];
+    }
+    document.getElementById("result").innerHTML = arr.join(" ")+'';
+  }
+
+</script>
+</body>
+</html>
