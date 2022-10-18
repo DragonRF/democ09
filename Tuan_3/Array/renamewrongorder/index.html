@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="name"></label><input type="text" id="name">
+<button onclick="ketqua()">Xếp Lại</button>
+<script>
+    function ketqua() {
+        let mystring = document.getElementById("name").value;
+        let arstring = mystring.toLowerCase();
+        let sep = /\s+/;
+        let arrayString = arstring.split(sep);
+        for (let i =  0; i < arrayString.length; i++){
+            arrayString[i] =  arrayString[i][0].toUpperCase() + arrayString[i].slice(1);
+        }
+        document.write(arrayString.join(" "));
+    }
+</script>
+</body>
+</html>
