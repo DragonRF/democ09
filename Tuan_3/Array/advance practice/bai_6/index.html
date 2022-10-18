@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai 6</title>
+</head>
+<body>
+<label for="so"></label><input type="text" id="so">
+<button onclick="ketqua()" id="btn">Kiem Tra</button>
+<p id="kq"></p>
+<script>
+  const bacd = [10, 12, 13, 15, 26, 14, 45, 67, 87, 11];
+  let flag = 0;
+  function ketqua() {
+    let so1 = +document.getElementById("so").value;
+    for (let i = 0; i < bacd.length; i++) {
+      flag = 0;
+      if (bacd[i] === so1) {
+        flag = 1;
+        document.getElementById("kq").innerHTML= so1 + " is in the array ";
+        break;
+      }
+    }
+    if (flag === 0) {
+      document.getElementById("kq").innerHTML = so1 + "is not in the array"
+    }
+  }
+</script>
+</body>
+</html>

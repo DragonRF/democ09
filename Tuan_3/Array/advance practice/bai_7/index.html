@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 7</title>
+</head>
+<body>
+<label for="numbers"></label><input type="text" id="numbers">
+<button onclick="ketqua()">Ket qua</button>
+<p id="kq"></p>
+<script>
+  const bacd = [10, 12, 13, 15, 26, 14, 45, 67, 87, 11];
+  function ketqua() {
+    let so1 = +document.getElementById("numbers").value;
+    for (let i = 0; i < bacd.length; i++) {
+      if (bacd[i] === so1) {
+        bacd.splice(i, 1)
+        document.getElementById("kq").innerHTML = bacd;
+      }
+    }
+  }
+</script>
+</body>
+</html>
