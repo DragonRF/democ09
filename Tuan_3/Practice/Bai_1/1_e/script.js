@@ -8,6 +8,8 @@ if (a === b && a === c) {
     document.getElementById("tamgiac").innerHTML = "Đây là tam giác cân";
 } else if (c**2 === (a**2 + b**2) || b**2 === (a**2 + c**2) || a**2 === (c**2 + b**2)) {
     document.getElementById("tamgiac").innerHTML = "Đây là tam giác vuông";
+} else if ( (a + b) > c || (a + c) > b || (c + b) > a ){
+    document.getElementById("tamgiac").innerHTML = "Đây là tam giác";
 } else {
-    document.getElementById("tamgiac").innerHTML = "Đây là tam giác thường";
+    document.getElementById("tamgiac").innerHTML = "Đây không phải là tam giác";
 }
