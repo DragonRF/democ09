@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4_B</title>
+</head>
+<body>
+<script>
+  function check_number(str)
+  {
+    let regexp = /^[0-9]/;
+    if (regexp.test(str))
+    {
+      alert(true);
+    }
+    else
+    {
+      alert(false);
+    }
+  }
+  check_number(str = +prompt("Đây có phải là kí tự số hay không?:"));
+</script>
+</body>
+</html>

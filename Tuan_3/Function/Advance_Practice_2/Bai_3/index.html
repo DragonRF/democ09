@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3_B</title>
+</head>
+<body>
+<script>
+  let x = +prompt("Nhập vào một số nguyên bất kì để tính giai thừa:")
+    function factorial(x)
+    {
+      if (x === 0)
+    {
+      return 1;
+    }
+      return x * factorial(x-1);
+    }
+    alert("Giai thừa của " + x + " là: " + factorial(x))
+</script>
+
+</body>
+</html>
