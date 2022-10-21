@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <style>
+        button{
+            padding: 3px 10px;
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border: none;
+            background: #8AC007;
+            color: #fff;
+            cursor: pointer;
+        }
+        td{
+            padding: 3px 10px;
+            border-radius: 20px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h2>Add new product</h2>
+
+<table>
+    <td align="center" style="background: lightgray;height: 50px;width: 230px">
+        <label for="txt"></label><input type="text" id="txt">
+        <button id="btn1" onclick="Add()">Add</button>
+    </td>
+</table>
+
+<h2>Display all product</h2>
+
+<table id="displayarea">
+
+</table>
+
+</body>
+</html>
+<script src="script.js"></script>
