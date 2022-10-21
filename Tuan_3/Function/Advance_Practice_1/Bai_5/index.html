@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+  let star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let star2 = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+  function find(a) {
+    let flag = 0;
+    for (let i = 0; i < star1.length; i++) {
+      if (a === star1[i]) {
+        return star2[i];
+      } else {
+        flag = 1;
+      }
+    }if (flag === 1)return 'Can not find';
+  }
+
+  let star = prompt('Enter name of star');
+  document.write(find(star));
+
+</script>
+</body>
+</html>
