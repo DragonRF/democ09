@@ -3,126 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="script.js"></script>
 </head>
+<style>
+    h1 {
+        color: #4CAF50;
+    }
+    button {
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+    }
+</style>
 <body>
-
-
-<script>
-    let Moblie = function (battery, memoryArea1, memoryArea2, memoryArea3) {
-        this.battery = battery;
-        this.memoryArea1 = memoryArea1;
-        this.memoryArea2 = memoryArea2;
-        this.memoryArea3 = memoryArea3;
-
-        this.checkStatusOnOff = function () {
-
-            return this.battery > 0;
-        };
-
-        this.turnOn = function () {
-            alert("Dien thoai dang tat");
-        };
-
-        this.turnOf = function () {
-            alert("Dien thoai dang bat");
-        };
-
-        this.charge = function () {
-            alert("Sac Pin" + this.battery++);
-        };
-
-        this.writeMessenger = function () {
-            +prompt("This is a message.");
-        };
-
-        this.massengerL = function () {
-            alert("Message da gui");
-
-        };
-        this.afterUse = function () {
-            alert("Dung mot chuc nang, Pin còn : " + this.battery--);
-        }
-
-    };
-    let mobile = new Moblie(10, 100, 100, 100);
-
-    function main() {
-        mobile.turnOf();
-    }
-
-    function main1() {
-        mobile.turnOn();
-    }
-
-    function main2() {
-        mobile.charge();
-    }
-
-    function main3() {
-        mobile.writeMessenger();
-    }
-
-    function main4() {
-        mobile.massengerL();
-    }
-
-    function main5() {
-        mobile.afterUse();
-
-    }
-</script>
-<font style="margin-left: 280px; color: #4CAF50;" > This's my phone </font>
-<table border="1">
-
-    <th><button type="button" onclick="main()" style=" cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;">BAT
-    </button></th>
-
-    <th><button type="button" onclick="main1()" style="cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;">TAT
-    </button></th>
-
-    <th><button type="button" onclick="main2()" style="cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;"> SAC PIN
-    </button></th>
-
-    <th><button type="button" onclick="main3()" style="cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;"> VIET TIN NHAN
-    </button></th>
-
-    <th><button type="button" onclick="main4()" style="cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;"> SU DUNG DI
-    </button></th>
-
-    <th><button type="button" onclick="main5()" style="cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;"> SU DUNG CHUC NANG
-    </button></th>
-
-</table>
-
+<div align="center">
+    <h1> Nokia </h1>
+    <table>
+        <th>
+            <button onclick="mainNokia()"> Turn on </button>
+        </th>
+        <th>
+            <button onclick="mainNokia1()"> Turn off </button>
+        </th>
+        <th>
+            <button onclick="mainNokia2()"> Charge </button>
+        </th>
+        <th>
+            <button onclick="mainNokia3()"> Write message </button>
+        </th>
+        <th>
+            <button onclick="mainNokia4()"> Send message </button>
+        </th>
+        <th>
+            <button onclick="mainNokia5()"> Message sent </button>
+        </th>
+        <th>
+            <button onclick="mainNokia6()"> Inbox </button>
+        </th>
+        <th>
+            <button onclick="mainNokia7()"> Battery now </button>
+        </th>
+    </table>
+    <h1> Iphone </h1>
+    <table>
+        <th>
+            <button onclick="mainIphone()"> Turn on </button>
+        </th>
+        <th>
+            <button onclick="mainIphone1()"> Turn off </button>
+        </th>
+        <th>
+            <button onclick="mainIphone2()"> Charge </button>
+        </th>
+        <th>
+            <button onclick="mainIphone3()"> Write message </button>
+        </th>
+        <th>
+            <button onclick="mainIphone4()"> Send message </button>
+        </th>
+        <th>
+            <button onclick="mainIphone5()"> Message sent </button>
+        </th>
+        <th>
+            <button onclick="mainIphone6()"> Inbox </button>
+        </th>
+        <th>
+            <button onclick="mainIphone7()"> Battery now </button>
+        </th>
+    </table>
+</div>
 </body>
 </html>
