@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Demo</title>
+</head>
+<body>
+<script>
+  class Mobile {
+    battery;
+    phoneStatus = true;
+    constructor(battery,phoneStatus) {
+      this.battery = battery;
+      this.phoneStatus = phoneStatus;
+    }
+    getBattery(){
+      return this.battery;
+    }
+    PhoneStatus() {
+      if (this.phoneStatus === true){
+        alert("Điện thoại đang bật.")
+      } else {
+        alert("Điện thoại đang tắt.")
+      }
+      return this.phoneStatus;
+    }
+
+  }
+  let mobile = new Mobile(10 + "%",true)
+  document.write(mobile.getBattery() + "<br>");
+  document.write(mobile.PhoneStatus())
+</script>
+</body>
+</html>
