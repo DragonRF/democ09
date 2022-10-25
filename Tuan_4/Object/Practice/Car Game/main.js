@@ -208,3 +208,4 @@ $(function() {
 }
 
 });
+alert("Use arrow key to control the car.");
