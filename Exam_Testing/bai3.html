@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function sumOfListPrime(x) {
+    let sum = 0;
+    let flag = 0
+    if (x === 1 || x === 0) {
+      return sum;
+    } else {
+      for (let i = 2; i <= x; i++) {
+        flag = 0;
+        for (let j = 2; j < i; j++) {
+          if (i % j === 0){
+            flag = 1;
+            break;
+          }
+        }
+        if (flag === 0) sum += i;
+      }
+      return sum;
+    }
+  }
+
+  let x = +prompt('Enter x');
+  alert(sumOfListPrime(x));
+</script>
+</body>
+</html>

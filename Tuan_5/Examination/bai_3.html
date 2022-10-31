@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài thi 3</title>
+</head>
+<body>
+<script>
+  function check(str1,str2){
+    let flag = 0;
+    let str = '';
+    for(let i=0;i<str2.length;i++){
+      flag = 0
+      str = '';
+      for(let j=i;j<str1.length+i;j++){
+        str += str2[j];
+      }
+      if(str === str1) {
+        flag = 1;
+        break;
+      }
+    }
+    if(flag === 1) alert('yes');
+    else alert('no');
+  }
+  check(str1 = prompt("Input value:"),"12345")
+</script>
+</body>
+</html>

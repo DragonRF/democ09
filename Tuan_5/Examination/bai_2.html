@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thi 2</title>
+</head>
+<body>
+<script>
+  function tryRemoveFromArray(arr, value) {
+      let i = 0;
+      while (i < arr.length) {
+      if (arr[i] === value) {
+        arr.splice(i, 1);
+      } else {
+        ++i;
+      }
+    }
+    return arr;
+  }
+  // Usage
+  console.log(tryRemoveFromArray([2,5,9,1,5,8,5],
+          value = +prompt("Nhập giá trị cần xóa bỏ:")));
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thi 4</title>
+</head>
+<body>
+<canvas id="myCanvas" width="220" height="120" style="border:1px solid #000000"></canvas>
+<script>
+    class Rectangle {
+        x;
+        y;
+        width;
+        height;
+        color;
+
+        constructor(x, y, width, height, color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+
+        get x() {
+            return this.x;
+        }
+
+        get y() {
+            return this.y;
+        }
+
+        get width() {
+            return this.width;
+        }
+
+        get height() {
+            return this.height;
+        }
+
+        get color() {
+            return this.color;
+        }
+    }
+    let rectangle = new Rectangle(10, 10, 200, 100, "#000000");
+    let x = rectangle.x;
+    let y = rectangle.y;
+    let width = rectangle.width;
+    let height = rectangle.height;
+    let color = rectangle.color;
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.fillRect(x, y, width, height, color);
+</script>
+</body>
+</html>
