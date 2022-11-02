@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thi 2</title>
+</head>
+<body>
+<script>
+    function deleteNumberFromArray(arr,index){
+        let newArr = [];
+        if(index>=0 && index< arr.length){
+            for (let i=0;i<index;i++){
+                newArr.push(arr[i]);
+            }
+            for (let i=index+1;i<arr.length;i++){
+                newArr.push(arr[i]);
+            }
+        }else return arr;
+        return newArr;
+    }
+    let arr = [1,2,3,4,5,6]
+    let index = +prompt("Nhập vị trí Index cần xóa trong mảng:")
+    document.write(deleteNumberFromArray(arr,index)+'')
+</script>
+</body>
+</html>
