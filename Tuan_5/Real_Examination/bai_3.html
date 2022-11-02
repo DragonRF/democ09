@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài thi 3</title>
+    <title>Cau 3</title>
 </head>
 <body>
 <script>
-  function sumOfListFibonacy(x) {
-    let arr = [0,1]
-    let a = 0;
-    let b = 1;
-    let temp;
+    let x = +prompt('Nhập vào số nguyên x:')
     let sum = 0;
-    for (let i = 2;; i++) {
-      if (a+b > x) break;
-      arr.push(a+b);
-      temp = a;
-      a = b;
-      b = temp+b;
+
+    function sumOfListFibonacy(y) {
+        let a = 0;
+        let b = 1;
+        let c = 0;
+        sum = a + b;
+        while (c <= y) {
+            sum = sum + c;
+            c = b + a;
+            a = b;
+            b = c;
+        }
+        return sum;
     }
-    for (let i = 0;i<arr.length; i++){
-      sum+= arr[i]
-    }
-    return sum;
-  }
-  console.log(sumOfListFibonacy(13))
+
+    sumOfListFibonacy(x);
+    console.log(sum);
 </script>
 </body>
 </html>
