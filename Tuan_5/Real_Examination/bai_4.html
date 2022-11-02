@@ -35,18 +35,22 @@
         get color() {
             return this.color;
         }
+        render() {
+            let ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.color;
+            ctx.fillStyle = color;
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.fill();
+        }
     }
 
-    let circle = new Circle(95, 80, 50, "#000000");
+    let circle = new Circle(95, 50, 40, "#000000");
     let x = circle.x;
     let y = circle.y;
     let radius = circle.radius;
     let color = circle.color;
-    let ctx = document.getElementById("myCanvas").getContext("2d");
-    ctx.color;
-    ctx.fillStyle = color;
-    ctx.arc(x, y, radius, 0, 2 * Math.PI);
-    ctx.fill();
+    circle.render()
+
 </script>
 </body>
 </html>
